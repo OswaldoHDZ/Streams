@@ -19,8 +19,8 @@ PUBLIC subAsm
 
 subAsm PROC
 	; Aqui vamos a meter los meses y los días
-	PUSH mesNac ; Metemos a la pila para despues pasarlo como parametro a la fuc de C
 	PUSH aniNac ; Metemos a la pila para despues pasarlo como parametro a la fuc de C
+	PUSH mesNac 
 	CALL calculaFechaNacimiento
 
 	

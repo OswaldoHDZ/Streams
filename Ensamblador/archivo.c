@@ -44,13 +44,15 @@ void calculaFechaNacimiento(int a, int b) {
 	tm = localtime(&t);
 	int mesActual = tm->tm_mon + 1;
 	int anioActual = 1900 + tm->tm_year;
+	int anios = calculoAnios(anioUsuario, anioActual);
+	printf("El usuario tiene %d", anios);
 	//printf("\n MES:    %d\n", tm->tm_mon+1); //Queremos imprimir el indice del mes
 	//printf("\n ANIO:   %d\n", 1900 + tm->tm_year); //Queremos imprimir el indice del año
 	
 	//Ya tenemos el día,mes, año de hoy ahora vamos a regresar solo el mes y año
 }
-int calculoAnios(int anioUsuario, anioUsuario) {
-
+int calculoAnios(int anioUsuario,int anioActual) {
+	return anioActual-anioUsuario;
 }
 //Calculo de edad de una  persona 
 //Obtener la fecha actual
