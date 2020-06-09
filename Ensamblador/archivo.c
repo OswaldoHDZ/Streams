@@ -45,7 +45,23 @@ void calculaFechaNacimiento(int a, int b) {
 	int mesActual = tm->tm_mon + 1;
 	int anioActual = 1900 + tm->tm_year;
 	int anios = calculoAnios(anioUsuario, anioActual);
-	printf("El usuario tiene %d", anios);
+	printf("El mes acutual es  %d", mesActual);
+	printf("El mes del usuario es  %d", mesUsuario);
+	//Lo siguiente que vamos a hacer es si el mes de cumpleños ya paso o no
+	if (mesUsuario <= mesActual) {
+		printf("El usuario tiene %d", anios);
+	}
+	else {
+		printf("El usuario tiene %d", anios-1);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	//printf("\n MES:    %d\n", tm->tm_mon+1); //Queremos imprimir el indice del mes
 	//printf("\n ANIO:   %d\n", 1900 + tm->tm_year); //Queremos imprimir el indice del año
 	
@@ -54,6 +70,7 @@ void calculaFechaNacimiento(int a, int b) {
 int calculoAnios(int anioUsuario,int anioActual) {
 	return anioActual-anioUsuario;
 }
+
 //Calculo de edad de una  persona 
 //Obtener la fecha actual
 //Apartir de la fecha de nacimiento
