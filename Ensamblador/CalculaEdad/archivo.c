@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+//https://stackoverflow.com/questions/19321804/this-function-or-variable-may-be-unsafe-visual-studio
 //Para que funcione el programa tiene que poner la siguiente configuración
 //El compilador de Visual Studio(VS) da este error.Es fácil deshacerse de este problema.
 
