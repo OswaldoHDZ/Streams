@@ -1,5 +1,5 @@
 const { Client, logger } = require('camunda-external-task-client-js');
-const open = require('open');
+// const open = require('open');
 
 // configuration for the Client:
 //  - 'baseUrl': url al motor de procesos
@@ -22,7 +22,7 @@ client.subscribe('charge-card', async function({ task, taskService }) {
 
   console.log(`Charging credit card with an amount of ${amount}€ for the item '${item}'...`);
 
-  open('https://docs.camunda.org/get-started/quick-start/success');
+//   open('https://docs.camunda.org/get-started/quick-start/success');
 
   // Complete the task
   await taskService.complete(task);
